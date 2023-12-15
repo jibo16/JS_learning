@@ -1,3 +1,46 @@
-h1 {
+/* General */
+
+* li{
+
+    font-weight: bolder;
+}
+* img {
+    height: 400px;
+    width: auto;
+}
+
+
+
+Definiendi personal
+*/
+#azul{
+
+    color: #00ffff;
+
+}
+
+#red_{
+    color: rgb(182, 27, 27);
+}
+
+#green{
+    color: rgb(144, 192, 71);
+}
+
+#purple{
+
     color: purple;
+}
+
+#grey{
+
+    color: grey;
+}
+#yello{
+
+    color: rgb(219, 219, 21);
+}
+#orange{
+    color: orange;
+
 }
