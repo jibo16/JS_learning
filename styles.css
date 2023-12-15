@@ -11,8 +11,9 @@
 
 
 
-Definiendi personal
-*/
+h1{
+    color: white;
+}
 #azul{
 
     color: #00ffff;
@@ -43,4 +44,7 @@ Definiendi personal
 #orange{
     color: orange;
 
+}
+body{
+    background-color: black;
 }
