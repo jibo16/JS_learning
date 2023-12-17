@@ -1,30 +1,11 @@
-#boxer{
-    margin-right: 550;
-    border-color: blueviolet;
-    border-style: groove;
-    padding: 25 25 25 25;
-    margin-bottom: 0%;
-    background-color: green;
-    border-width: 5;
+h1, h2{
+    color: purple;
 }
-#boxerTwo{
-    margin-top: 0;
-    margin-left: 484;
-    margin-right: 55;
-    border-style: groove;
-    border-color: red;
-    background-color: aqua;
-    padding: 45 45 45 45;
-    margin-bottom: 0%;
-    border-width: 5;
-    }
 
-#boxerThree{
-    margin-right: 550;
-    border-color: black;
-    border-style: groove;
-    padding: 25 25 25 25;
-    margin-bottom: 0%;
-    margin-top: 0%;
-    background-color: red;
+div > p{
+    color: firebrick;
+}
+
+ul {
+    color: blue;
 }
