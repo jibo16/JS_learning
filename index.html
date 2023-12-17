@@ -1,61 +1,139 @@
-<!DOCTYPE html>
-
+!DOCTYPE html>
 <html>
-    <head>
 
-        <meta>
-        <title>
-            Website de prueba
-        </title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>
-            Aprendiendo ingles con coloresa
-        
-        </h1>
-    <ul>
-        <li id = "azul">
-            
-            Blue<br>
-            <img src="https://images.unsplash.com/photo-1601436155198-2ebfea8117b0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8fA%3D%3D" alt="pool">
-        <li id="red_">
-            Red<br>
-            
-            <img src="https://img.freepik.com/vector-gratis/acuarela-real-fondo-rojo-san-valentin_1340-4006.jpg?size=338&ext=jpg&ga=GA1.1.1222169770.1702512000&semt=ais" alt="Red color">
+<head>
+  <title>CSS Display Property Example</title>
+  <style>
+    p {
+      color: white;
+    }
 
+    .block {
+      display: block;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      margin-bottom: 10px;
+    }
 
+    .inline {
+      display: inline;
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      margin-right: 10px;
+    }
 
-        </li>
-        <li id = "green">
-            Green<br>
-            <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" alt="Greeen">
-        </li>
-        <li id="purple">
-            
-            PURPLE<br>
-            <img src="https://pics.craiyon.com/2023-07-01/1c71c0d4e2b740709008443516f98241.webp" alt="purple king">
+    .inline-block {
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+      margin-right: 10px;
+    }
 
-        </li>
-        <li id="grey">
-            Grey <br>
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISDxUPEhIVFRUVFRUVFRUXFxcXFxUVFRUWFhUVFxcYHSggGBolHRUVITEhJSktLi4uFx8zODMtNygtLisBCgoKDQ0NGg8HDisZHxkrKys3KysrKysrNysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALwBDAMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQYC/8QAHRABAQEBAAEFAAAAAAAAAAAAABEB8CECMVGR0f/EABYBAQEBAAAAAAAAAAAAAAAAAAACAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AM6ApgAAAAAAAC4mCggAAAAAGAAAAAAAAAAAAAAF7wAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAgaAAAAAAAAAAAAAAAAoIEAAAAAAAAAAAAAAAAAAAAAAAO7yYAAAAAAAAIChQAAAAAAAAAAACAAaAAAAARNXAAAAAIAAAAAAACKAAAAAGAAAAAAAAAAAAEAAAAAAAAAAgAAAFAAAAAAAAAAAAO9gAAAO+QAWpQA0AIEAAAAAAAAAAAqiXvIAAAAAQAAAAAAAA7qAAAHdgABAAAAAAgAAAAAAAAABAAAMAAAAAAAAAAAAAANADAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAAAAAgAAAAAACoAEAAAAAAAAAAAA0AAAAAAAAAAADAAFTdAAAAoABoAAAGgBiZoKOd1dBYAABoAelQQDAApe+gKIuACpn6AAAGgCoYD/2Q==" alt="grety">
+    .input-group {
+      margin-top: 10px;
+    }
 
+    .slider-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
 
-        </li>
-        <li id="yello">
-            Yellow<br>
-            
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Yellow_Marigold_Tennessee.jpg/273px-Yellow_Marigold_Tennessee.jpg" alt="Yellow">
-        
-        </li>
-        <li id="orange">
-            Orange<br>
-            <img src="data:image/jpeg;base64,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" alt="orange">
+    .slider-label {
+      margin-right: 10px;
+    }
 
-        </li>
-         
-    </ul>
-    </body>
+    .slider {
+      flex: 1;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 5px;
+      background-color: #ddd;
+      outline: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      background-color: #666;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 15px;
+      height: 15px;
+      background-color: #666;
+      cursor: pointer;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Display Property</h1>
+  <p class="block">Block Paragraph </p>
+  <p class="inline">Inline Paragraph
+  </p>
+  <p class="inline-block">Inline-Block Paragraph</p>
+
+  <div class="input-group">
+    <div class="slider-group">
+      <label class="slider-label" for="block-height-slider">Block Height:</label>
+      <input type="range" id="block-height-slider" min="100" max="2000" value="200" class="slider red">
+      <output id="block-height-output">200</output>
+    </div>
+    <div class="slider-group">
+      <label class="slider-label" for="block-width-slider">Block Width:</label>
+      <input type="range" id="block-width-slider" min="100" max="2000" value="200" class="slider red">
+      <output id="block-width-output">200</output>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <div class="slider-group">
+      <label class="slider-label" for="inline-height-slider">Inline Height:</label>
+      <input type="range" id="inline-height-slider" min="100" max="2000" value="200" class="slider green">
+      <output id="inline-height-output">100</output>
+    </div>
+    <div class="slider-group">
+      <label class="slider-label" for="inline-width-slider">Inline Width:</label>
+      <input type="range" id="inline-width-slider" min="100" max="2000" value="200" class="slider green">
+      <output id="inline-width-output">100</output>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <div class="slider-group">
+      <label class="slider-label" for="inline-block-height-slider">Inline-Block Height:</label>
+      <input type="range" id="inline-block-height-slider" min="100" max="2000" value="200" class="slider blue">
+      <output id="inline-block-height-output">150</output>
+    </div>
+    <div class="slider-group">
+      <label class="slider-label" for="inline-block-width-slider">Inline-Block Width:</label>
+      <input type="range" id="inline-block-width-slider" min="100" max="2000" value="200" class="slider blue">
+      <output id="inline-block-width-output">150</output>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 
 </html>
