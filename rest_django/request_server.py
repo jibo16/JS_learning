@@ -1,5 +1,10 @@
 import requests
+import cloudscraper
 
-r = requests.get("http://127.0.0.1:8000/great", params={"abc":123})
+crs = cloudscraper.create_scraper()
 
-print(r.json())
+
+
+r = requests.get("http://127.0.0.1:8000/great", params={"abc":123, "22":321})
+
+print(crs.get("http://127.0.0.1:8000/great").text)
